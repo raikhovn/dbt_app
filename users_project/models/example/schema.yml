@@ -1,0 +1,19 @@
+
+version: 2
+
+models:
+  - name: users_model
+    description: "user dbt model"
+    columns:
+      - name: user_id
+        description: "The primary key for this table"
+        tests:
+          - not_null
+
+  - name: user_purchases_model
+    description: "user purchases"
+    columns:
+      - name: username
+        description: "The primary key for this table"
+        tests:
+          - not_null
